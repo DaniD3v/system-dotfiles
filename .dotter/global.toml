@@ -1,9 +1,6 @@
 [default]
 depends = ["gentoo", "grub", "greetd"]
 
-[gentoo]
-depends = ["openrc"]
-
 [gentoo.files]
 "gentoo/world" =      { target="/var/lib/portage/world",  type="symbolic", owner="root" }
 "gentoo/make.conf" =  { target="/etc/portage/make.conf",  type="symbolic", owner="root" }
@@ -13,7 +10,7 @@ depends = ["openrc"]
 "gentoo/pkg.mask" =   { target="/etc/portage/package.mask", type="symbolic", owner="root" }
 "gentoo/use.mask" =   { target="/etc/portage/profile/package.use.mask", type="symbolic", owner="root" }
 "gentoo/pkg.unmask" = { target="/etc/portage/package.unmask", type="symbolic", owner="root" }
-"gentoo/pkg.accept" = { target="/etc/portage/package.accept_keywords", type="symbolic", owner="root" }
+"gentoo/pkg.accept_keywords" = { target="/etc/portage/package.accept_keywords", type="symbolic", owner="root" }
 
 [openrc.files]
 openrc = { target="/etc", type="symbolic", owner="root" }
