@@ -2,7 +2,6 @@ app-admin/bitwarden-desktop-bin
 app-admin/dotter
 app-admin/eclean-kernel
 app-admin/sudo
-app-admin/sysklogd
 app-admin/yadm
 app-backup/deja-dup
 app-containers/docker
@@ -26,6 +25,7 @@ dev-lang/python
 dev-python/httpx
 dev-python/pip
 dev-util/insomnia-bin
+dev-util/jetbrains-toolbox
 dev-util/pkgcheck
 dev-util/pkgdev
 dev-util/rustup
@@ -46,12 +46,12 @@ gui-apps/slurp
 gui-apps/swayidle
 gui-apps/swaylock-effects
 gui-apps/tuigreet
-gui-apps/waybar
 gui-apps/wl-clipboard
 gui-libs/display-manager-init
 gui-libs/xdg-desktop-portal-wlr
 gui-wm/hyprland
 media-fonts/fonts-meta
+media-fonts/meslo-nerd
 media-fonts/mikachan-font-ttf
 media-gfx/eog
 media-gfx/gimp
@@ -76,8 +76,6 @@ net-wireless/hostapd-mana
 sci-mathematics/geogebra-bin
 sys-apps/baobab
 sys-apps/flatpak
-sys-apps/gnome-disk-utility
-sys-apps/xdg-desktop-portal
 sys-block/gparted
 sys-boot/grub
 sys-fs/btrfs-progs
@@ -89,6 +87,7 @@ sys-kernel/installkernel-gentoo
 sys-kernel/linux-firmware
 sys-process/bottom
 sys-process/dcron
+virtual/dotnet-sdk:6.0
 www-client/firefox
 x11-apps/xrandr
 x11-base/xorg-server
