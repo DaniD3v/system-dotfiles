@@ -11,7 +11,13 @@
 # X removal
 
 >=www-client/firefox-115.5.0 -X # remove X to avoid firefox[pgo] requiring xvfb server
+>=x11-terms/kitty-0.30.1 -X
 
+>=sys-apps/flatpak-1.14.4-r3 -X
+>=media-video/ffmpeg-6.0-r9 -X
+
+>=media-fonts/meslo-nerd-3.1.1 -X # only have X use flag because of font_xfont_config
+>=media-fonts/mikachan-font-ttf-8.9-r2 -X
 
 # required
 
@@ -24,4 +30,4 @@
 >=media-video/ffmpeg-6.0-r9 opus # obs-studio
 >=gnome-base/gvfs-1.50.6 fuse # deja-dup
 >=sys-libs/zlib-1.2.13-r1 minizip # prismlauncher & wireshark
-
+>=dev-libs/libdbusmenu-16.04.0-r2 gtk3 # spotify

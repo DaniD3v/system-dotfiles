@@ -35,7 +35,6 @@ gnome-base/nautilus
 gnome-extra/gnome-calculator
 gnome-extra/gnome-characters
 gnome-extra/gnome-clocks
-gnome-extra/gnome-system-monitor
 gnome-extra/polkit-gnome
 gui-apps/eww
 gui-apps/fuzzel
@@ -55,8 +54,6 @@ media-fonts/meslo-nerd
 media-fonts/mikachan-font-ttf
 media-gfx/eog
 media-gfx/gimp
-media-libs/libpulse
-media-libs/mesa
 media-sound/alsa-utils
 media-sound/spotify
 media-video/ffmpeg
@@ -94,5 +91,4 @@ x11-base/xorg-server
 x11-drivers/nvidia-drivers
 x11-misc/dunst
 x11-misc/pywal
-x11-terms/alacritty
 x11-terms/kitty
