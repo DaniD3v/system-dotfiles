@@ -32,3 +32,4 @@
 
 >=gui-apps/tuigreet-0.8.0-r1
 >=dev-util/rustup-1.25.2
+>=dev-util/tokei-12.1.2
