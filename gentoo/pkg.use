@@ -8,6 +8,8 @@
 >=media-video/pipewire-0.3.80 sound-server # full pipewire setup
 >=media-sound/pulseaudio-16.1 -daemon
 
+>=sys-kernel/installkernel-gentoo-7 grub
+
 # X removal
 
 >=www-client/firefox-115.5.0 -X # remove X to avoid firefox[pgo] requiring xvfb server

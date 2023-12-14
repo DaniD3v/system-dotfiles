@@ -20,6 +20,7 @@
 >=dev-util/jetbrains-toolbox-2.1.1.18388
 >=app-backup/deja-dup-44.2
 >=gui-apps/packettracer-8.2.1
+>=games-arcade/jellydrift-1
 
 >=gui-wm/hyprland-0.32.3
 >=gui-apps/swaylock-effects-1.6.3
