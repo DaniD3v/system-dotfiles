@@ -21,9 +21,11 @@
 >=app-backup/deja-dup-44.2
 >=gui-apps/packettracer-8.2.1
 >=games-arcade/jellydrift-1
+>=net-im/teams-for-linux-1.3.23::guru
 
 >=gui-wm/hyprland-0.32.3
 >=gui-apps/swaylock-effects-1.6.3
+>=app-misc/brightnessctl-0.5.1
 >=gui-apps/hyprpicker-0.1.1
 >=app-admin/dotter-0.13.0-r2
 

@@ -24,6 +24,7 @@
 # required
 
 >=x11-libs/libdrm-2.4.116 video_cards_radeon # mesa
+>=media-libs/libvpx-1.13.1-r1 postproc # no clue randomly appeared
 >=media-libs/libsdl2-2.28.3 gles2 # required for wayland flag
 >=media-libs/libmediaart-1.9.6-r1 -qt5 # qt5 and gtk both selected as default (wtf gentoo)
 

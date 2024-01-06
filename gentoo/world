@@ -11,6 +11,8 @@ app-editors/nano
 app-editors/neovim
 app-emulation/qemu
 app-eselect/eselect-repository
+app-misc/brightnessctl
+app-misc/neofetch
 app-office/libreoffice
 app-portage/gentoolkit
 app-shells/gentoo-zsh-completions
@@ -61,6 +63,7 @@ media-gfx/eog
 media-gfx/gimp
 media-libs/libpulse
 media-sound/alsa-utils
+media-sound/playerctl
 media-sound/spotify
 media-video/ffmpeg
 media-video/mpv
@@ -68,6 +71,7 @@ media-video/obs-studio
 media-video/totem
 net-analyzer/wireshark
 net-im/discord
+net-im/teams-for-linux
 net-libs/nodejs
 net-misc/chrony
 net-misc/networkmanager
@@ -91,6 +95,7 @@ sys-kernel/installkernel-gentoo
 sys-kernel/linux-firmware
 sys-process/bottom
 sys-process/dcron
+sys-process/lsof
 virtual/dotnet-sdk:6.0
 www-client/firefox
 x11-apps/xrandr
