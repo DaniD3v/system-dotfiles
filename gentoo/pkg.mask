@@ -2,5 +2,6 @@
 net-libs/webkit-gtk
 dev-qt/qtwebengine
 
-*/*::pentoo
+*/*::zGentoo
 */*::supertux88
+*/*::pentoo

@@ -2,7 +2,6 @@ app-admin/bitwarden-desktop-bin
 app-admin/dotter
 app-admin/eclean-kernel
 app-admin/sudo
-app-admin/yadm
 app-backup/deja-dup
 app-containers/docker
 app-containers/docker-cli
@@ -54,7 +53,7 @@ gui-apps/swaylock-effects
 gui-apps/tuigreet
 gui-apps/wl-clipboard
 gui-libs/display-manager-init
-gui-libs/xdg-desktop-portal-wlr
+gui-libs/xdg-desktop-portal-hyprland
 gui-wm/hyprland
 media-fonts/fonts-meta
 media-fonts/meslo-nerd
@@ -84,6 +83,7 @@ net-wireless/hostapd-mana
 sci-mathematics/geogebra-bin
 sys-apps/baobab
 sys-apps/flatpak
+sys-apps/xdg-desktop-portal-gtk
 sys-block/gparted
 sys-boot/grub
 sys-fs/btrfs-progs
@@ -93,6 +93,7 @@ sys-fs/ntfs3g
 sys-kernel/gentoo-kernel
 sys-kernel/installkernel-gentoo
 sys-kernel/linux-firmware
+sys-power/asusctl
 sys-process/bottom
 sys-process/dcron
 sys-process/lsof

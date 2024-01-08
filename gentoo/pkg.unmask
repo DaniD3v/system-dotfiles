@@ -1,8 +1,11 @@
 
->=net-wireless/hostapd-mana-2.6.5_p20230803::pentoo
->=net-proxy/burpsuite-2023.10.2.5::pentoo
+>=sys-power/asusctl-4.7.2-r1::zGentoo
+>=sys-power/supergfxctl-5.1.2-r2::zGentoo
 
 >=app-shells/powerlevel10k-1.19.0::supertux88
 >=app-shells/gitstatus-1.5.4::supertux88
 >=media-fonts/meslo-nerd-3.1.1::supertux88
 >=app-admin/dotter-0.13.0-r2::supertux88
+
+>=net-wireless/hostapd-mana-2.6.5_p20230803::pentoo
+>=net-proxy/burpsuite-2023.10.2.5::pentoo
