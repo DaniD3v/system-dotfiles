@@ -1,2 +1,0 @@
-
-=dev-lang/rust-1.73.0 -nightly

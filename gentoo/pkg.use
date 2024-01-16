@@ -3,12 +3,11 @@
 # intended
 
 >=x11-drivers/nvidia-drivers-535.104.05 kernel-open
+>=sys-kernel/installkernel-7 grub
 >=gnome-base/nautilus-44.2.1 -previewer
 
 >=media-video/pipewire-0.3.80 sound-server # full pipewire setup
 >=media-sound/pulseaudio-16.1 -daemon
-
->=sys-kernel/installkernel-gentoo-7 grub
 
 # X removal
 
@@ -23,14 +22,10 @@
 
 # required
 
->=x11-libs/libdrm-2.4.116 video_cards_radeon # mesa
->=media-libs/libvpx-1.13.1-r1 postproc # no clue randomly appeared
 >=media-libs/libsdl2-2.28.3 gles2 # required for wayland flag
 >=media-libs/libmediaart-1.9.6-r1 -qt5 # qt5 and gtk both selected as default (wtf gentoo)
 
-=dev-lang/rust-1.73.0 nightly # eww
->=gui-libs/wlroots-0.16.2-r2 tinywl # firefox[pgo]
 >=media-video/ffmpeg-6.0-r9 opus # obs-studio
 >=gnome-base/gvfs-1.50.6 fuse # deja-dup
 >=sys-libs/zlib-1.2.13-r1 minizip # prismlauncher & wireshark
->=dev-libs/libdbusmenu-16.04.0-r2 gtk3 # spotify
+

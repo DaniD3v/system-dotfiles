@@ -8,16 +8,12 @@ depends = ["gentoo", "grub", "greetd"]
 
 "gentoo/pkg.use" =    { target="/etc/portage/package.use", type="symbolic", owner="root" }
 "gentoo/pkg.mask" =   { target="/etc/portage/package.mask", type="symbolic", owner="root" }
-"gentoo/use.mask" =   { target="/etc/portage/profile/package.use.mask", type="symbolic", owner="root" }
 "gentoo/pkg.unmask" = { target="/etc/portage/package.unmask", type="symbolic", owner="root" }
 "gentoo/pkg.accept_keywords" = { target="/etc/portage/package.accept_keywords", type="symbolic", owner="root" }
-
-[openrc.files]
-openrc = { target="/etc", type="symbolic", owner="root" }
-"openrc/power.start" = { target="/etc/local.d/power.start", type="symbolic", owner="root" }
 
 [grub.files]
 "other/grub" = { target="/etc/default/grub", type="symbolic", owner="root" }
 
 [greetd.files]
 "other/greetd.toml" = { target="/etc/greetd/config.toml", type="symbolic", owner="root" }
+
