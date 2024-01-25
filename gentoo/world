@@ -21,7 +21,6 @@ app-shells/zsh
 app-shells/zsh-completions
 app-text/evince
 dev-lang/python
-dev-qt/qtquickcontrols2
 dev-util/ebuildtester
 dev-util/insomnia-bin
 dev-util/jetbrains-toolbox
@@ -92,3 +91,4 @@ x11-misc/pywal
 x11-misc/sddm
 x11-terms/gnome-terminal
 x11-terms/kitty
+x11-themes/sddm-sugar-dark

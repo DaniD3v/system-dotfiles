@@ -23,6 +23,7 @@
 >=dev-util/rustup-1.25.2
 >=dev-util/ebuildtester-42-r2
 >=dev-util/tokei-12.1.2
+>=x11-themes/sddm-sugar-dark-1.2::danidev
 >=app-misc/brightnessctl-0.5.1
 
 # dependencies
