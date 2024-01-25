@@ -85,6 +85,7 @@ sys-process/bottom
 sys-process/iotop-c
 sys-process/lsof
 www-client/firefox
+x11-base/xorg-server
 x11-drivers/nvidia-drivers
 x11-misc/dunst
 x11-misc/pywal

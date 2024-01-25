@@ -1,5 +1,5 @@
 [default]
-depends = ["gentoo", "grub", "greetd"]
+depends = ["gentoo", "grub", "sddm"]
 
 [gentoo.files]
 "gentoo/world" =      { target="/var/lib/portage/world",  type="symbolic", owner="root" }
@@ -14,6 +14,6 @@ depends = ["gentoo", "grub", "greetd"]
 [grub.files]
 "other/grub" = { target="/etc/default/grub", type="symbolic", owner="root" }
 
-[greetd.files]
-"other/greetd.toml" = { target="/etc/greetd/config.toml", type="symbolic", owner="root" }
+[sddm.files]
+"other/sddm.conf" = { target="/etc/sddm.conf.d/sddm.conf", type="symbolic", owner="root" }
 
