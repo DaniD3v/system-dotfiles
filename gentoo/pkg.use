@@ -3,7 +3,7 @@
 # intended
 
 >=x11-drivers/nvidia-drivers-535.104.05 kernel-open
->=sys-kernel/installkernel-7 grub
+>=sys-kernel/installkernel-7 grub -systemd
 >=gnome-base/nautilus-44.2.1 -previewer
 
 >=media-video/pipewire-0.3.80 sound-server # full pipewire setup
@@ -16,8 +16,10 @@
 
 >=sys-apps/flatpak-1.14.4-r3 -X
 >=media-video/ffmpeg-6.0-r9 -X
+>=app-misc/fastfetch-2.6.0 -X
 
 >=media-fonts/meslo-nerd-3.1.1 -X # only have X use flag because of font_xfont_config
+>=media-fonts/corefonts-1-r7 -X
 >=media-fonts/mikachan-font-ttf-8.9-r2 -X
 
 # required
@@ -25,7 +27,7 @@
 >=media-libs/libsdl2-2.28.3 gles2 # required for wayland flag
 >=media-libs/libmediaart-1.9.6-r1 -qt5 # qt5 and gtk both selected as default (wtf gentoo)
 
+>=sys-kernel/installkernel-18 dracut
 >=media-video/ffmpeg-6.0-r9 opus # obs-studio
->=gnome-base/gvfs-1.50.6 fuse # deja-dup
 >=sys-libs/zlib-1.2.13-r1 minizip # prismlauncher & wireshark
 

@@ -1,41 +1,31 @@
 
-# bug fixes/ slot config resolution
-
-=gui-apps/fuzzel-9999 ** # fetch broken rn
->=gui-apps/fuzzel-1.9.2
-
-=gui-apps/eww-9999 **
->=dev-lang/rust-1.73.0
-
->=virtual/dist-kernel-6.6.11
->=sys-kernel/gentoo-kernel-6.6.11 # RMAPI lock with nvidia + performance?
-
 # intended
-
 >=sci-mathematics/geogebra-bin-6.0.804.0
 >=app-admin/bitwarden-desktop-bin-2023.7.1
 >=media-video/obs-studio-29.1.3-r2
->=dev-util/insomnia-bin-2023.5.8
 >=dev-util/jetbrains-toolbox-2.1.1.18388
->=app-backup/deja-dup-44.2
->=gui-apps/packettracer-8.2.1
->=games-arcade/jellydrift-1
+>=dev-util/insomnia-bin-2023.5.8::guru
 >=net-im/teams-for-linux-1.3.23::guru
+>=gui-apps/packettracer-8.2.1::danidev
+>=games-arcade/jellydrift-1::danidev
 
 >=gui-wm/hyprland-0.34.0
->=gui-libs/xdg-desktop-portal-hyprland-1.3.1::guru
->=gui-apps/swaylock-effects-1.6.3
->=gui-apps/tuigreet-0.8.0-r1
->=gui-apps/hyprpicker-0.1.1
+>=gui-apps/fuzzel-1.9.2::guru
+>=gui-apps/swaylock-effects-1.6.3::guru
+>=gnome-extra/aylurs-gtk-shell-1.6.3::danidev
 >=app-admin/dotter-0.13.0-r2
 
 >=app-misc/fastfetch-2.5.0
 >=app-shells/powerlevel10k-1.19.0
->=media-fonts/meslo-nerd-3.1.1
+=media-fonts/meslo-nerd-3.1.1
 >=app-shells/gitstatus-1.5.4
 
 >=dev-util/rustup-1.25.2
 >=dev-util/ebuildtester-42-r2
 >=dev-util/tokei-12.1.2
 >=app-misc/brightnessctl-0.5.1
+
+# dependencies
+>=dev-cpp/tomlplusplus-3.4.0
+>=dev-libs/yyjson-0.8.0
 
