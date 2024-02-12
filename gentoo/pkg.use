@@ -24,8 +24,11 @@
 
 # required
 
+>=gui-libs/wlroots-0.17.1 tinywl # firefox pgo
+
 >=media-libs/libsdl2-2.28.3 gles2 # required for wayland flag
 >=media-libs/libmediaart-1.9.6-r1 -qt5 # qt5 and gtk both selected as default (wtf gentoo)
+>=gui-libs/gtk-layer-shell-0.8.1 introspection
 
 >=sys-kernel/installkernel-18 dracut
 >=media-video/ffmpeg-6.0-r9 opus # obs-studio

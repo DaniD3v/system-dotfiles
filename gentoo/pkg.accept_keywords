@@ -17,16 +17,18 @@
 
 >=app-misc/fastfetch-2.5.0
 >=app-shells/powerlevel10k-1.19.0
-=media-fonts/meslo-nerd-3.1.1
+>=media-fonts/meslo-nerd-3.1.1
 >=app-shells/gitstatus-1.5.4
 
 >=dev-util/rustup-1.25.2
 >=dev-util/ebuildtester-42-r2
 >=dev-util/tokei-12.1.2
->=x11-themes/sddm-sugar-dark-1.2::danidev
 >=app-misc/brightnessctl-0.5.1
+>=app-crypt/hashcat-6.2.6-r1
+>=x11-themes/sddm-sugar-dark-1.2::danidev
 
 # dependencies
 >=dev-cpp/tomlplusplus-3.4.0
 >=dev-libs/yyjson-0.8.0
+>=dev-util/nvidia-cuda-toolkit-12.3.2
 
