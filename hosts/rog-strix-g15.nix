@@ -32,19 +32,7 @@
       videoDrivers = ["amdgpu"];
     };
 
-    displayManager = {
-      sessionPackages = with pkgs.gnome; [gnome-session.sessions];
-
-      sddm = {
-        enable = true;
-        package = pkgs.unstable.kdePackages.sddm;
-
-        theme = "sddm-astronaut-theme";
-        extraPackages = [pkgs.unstable.sddm-astronaut];
-
-        wayland.enable = true;
-      };
-    };
+    displayManager.sessionPackages = with pkgs.gnome; [gnome-session.sessions];
 
     pipewire = {
       enable = true;
@@ -102,14 +90,6 @@
 
     btop
     git
-
-    (unstable.sddm-astronaut.override {
-      themeConfig = {
-        ForceHideCompletePassword = true;
-        FormPosition = "left";
-        AccentColor = "#746385";
-      };
-    })
   ];
 
   programs = {

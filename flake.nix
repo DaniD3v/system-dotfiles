@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
-    nixpkgs-unstable.url = "nixpkgs";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs";
   };
 
   outputs = {
@@ -52,6 +52,7 @@
           nixosConfigurations = generateConfig "rog-strix-g15" system inputs [
             ./common/plymouth.nix
             ./common/nvidia.nix
+            ./common/sddm.nix
 
             nixos-hardware.nixosModules.asus-rog-strix-g513im
             stateVersion
