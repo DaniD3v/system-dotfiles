@@ -2,17 +2,6 @@
   nixpkgs.config.allowUnfree = true;
 
   boot = {
-    # doesn't actually activate because the drivers aren't loaded with the kernel
-    # this is still activated to disable the console output
-    plymouth.enable = true;
-
-    consoleLogLevel = 0;
-    initrd.verbose = false;
-    kernelParams = [
-      "quiet"
-      "rd.udev.log_level=3"
-    ];
-
     loader = {
       systemd-boot.enable = true;
       timeout = 0;
