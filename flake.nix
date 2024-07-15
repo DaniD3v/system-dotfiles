@@ -45,6 +45,10 @@
       # stateVersion of all my current machines
       system.stateVersion = "24.05";
     };
+
+    allowUnfree = {
+      nixpkgs.config.allowUnfree = true;
+    };
   in
     flake-utils.lib.eachDefaultSystem (
       system: {
@@ -56,6 +60,7 @@
 
             nixos-hardware.nixosModules.asus-rog-strix-g513im
             stateVersion
+            allowUnfree
           ];
         };
       }

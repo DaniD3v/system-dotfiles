@@ -1,6 +1,4 @@
 {pkgs, ...}: {
-  nixpkgs.config.allowUnfree = true;
-
   boot = {
     loader = {
       systemd-boot.enable = true;
