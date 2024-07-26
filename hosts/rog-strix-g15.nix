@@ -86,6 +86,7 @@
     alejandra
     fastfetch
 
+    helix
     btop
     git
   ];
@@ -96,11 +97,6 @@
     hyprland.enable = true;
     dconf.enable = true;
     fish.enable = true;
-
-    neovim = {
-      enable = true;
-      defaultEditor = true;
-    };
   };
 
   users.defaultUserShell = pkgs.fish;
