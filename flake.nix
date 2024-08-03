@@ -1,5 +1,5 @@
 {
-  description = "A very basic flake";
+  description = "DaniD3v's system-dotfiles";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
