@@ -34,7 +34,7 @@
               networking.hostName = hostname;
             })
             ./hardware/${hostname}.nix
-            ./common/nix-settings.nix
+            ./common
           ]
           ++ pathArrayIfExists ./hosts/${hostname}.nix
           ++ modules;
