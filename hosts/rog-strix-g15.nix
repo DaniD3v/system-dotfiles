@@ -39,10 +39,6 @@
       isNormalUser = true;
       extraGroups = ["wheel" "networkmanager" "video" "dialout"];
     };
-    guest = {
-      isNormalUser = true;
-      hashedPassword = "";
-    };
   };
 
   fonts.packages = [pkgs.meslo-lgs-nf];
