@@ -16,8 +16,6 @@
 
   sound.enable = true;
   hardware = {
-    cpu.amd.updateMicrocode = true;
-
     bluetooth.enable = true;
     opengl.enable = true;
   };

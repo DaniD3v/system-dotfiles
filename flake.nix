@@ -41,8 +41,12 @@
       };
     };
 
+    allowUnfree = {
+      nixpkgs.config.allowUnfree = true;
+      hardware.enableRedistributableFirmware = true;
+    };
+
     stateVersion = version: {system.stateVersion = version;};
-    allowUnfree = {nixpkgs.config.allowUnfree = true;};
   in
     flake-utils.lib.eachDefaultSystem (
       system: {
