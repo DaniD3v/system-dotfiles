@@ -53,6 +53,7 @@
         packages = {
           nixosConfigurations = generateConfig "rog-strix-g15" system inputs [
             ./common/plymouth.nix
+            ./common/pipewire.nix
             ./common/nvidia.nix
             ./common/sddm.nix
 

@@ -14,7 +14,6 @@
 
   systemd.services.NetworkManager-wait-online.enable = false; # massivly improve boot time
 
-  sound.enable = true;
   hardware = {
     bluetooth.enable = true;
     opengl.enable = true;
@@ -27,13 +26,6 @@
 
     displayManager.sessionPackages = with pkgs.gnome; [gnome-session.sessions];
 
-    pipewire = {
-      enable = true;
-
-      pulse.enable = true;
-      alsa.enable = true;
-    };
-
     earlyoom.enable = true;
     upower.enable = true;
     asusd.enable = true;
@@ -44,7 +36,6 @@
 
   security = {
     pam.services.swaylock = {}; # fix swaylock
-    rtkit.enable = true; # pipewire
   };
 
   virtualisation = {
