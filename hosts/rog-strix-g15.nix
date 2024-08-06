@@ -74,15 +74,9 @@
   programs = {
     steam.enable = true;
 
-    hyprland.enable = true;
     dconf.enable = true;
     fish.enable = true;
   };
 
   users.defaultUserShell = pkgs.fish;
-
-  xdg.portal.extraPortals = [
-    pkgs.xdg-desktop-portal-gtk # gnome darkmode fix + file picker
-    pkgs.xdg-desktop-portal-hyprland
-  ];
 }

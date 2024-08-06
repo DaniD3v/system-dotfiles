@@ -55,6 +55,7 @@
             ./common/networkmanager.nix
             ./common/plymouth.nix
             ./common/pipewire.nix
+            ./common/hyprland.nix
             ./common/nvidia.nix
             ./common/sddm.nix
 
