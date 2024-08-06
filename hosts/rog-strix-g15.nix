@@ -1,12 +1,5 @@
 {pkgs, ...}: {
-  boot = {
-    loader = {
-      systemd-boot.enable = true;
-      timeout = 0;
-    };
-
-    tmp.useTmpfs = true;
-  };
+  boot.tmp.useTmpfs = true;
 
   hardware = {
     bluetooth.enable = true;
