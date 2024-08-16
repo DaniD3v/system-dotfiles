@@ -51,20 +51,21 @@
     flake-utils.lib.eachDefaultSystem (
       system: {
         packages = {
-          nixosConfigurations = generateConfig "rog-strix-g15" system inputs [
-            ./common/networkmanager.nix
-            ./common/guest-user.nix
-            ./common/plymouth.nix
-            ./common/pipewire.nix
-            ./common/hyprland.nix
-            ./common/nvidia.nix
-            ./common/sddm.nix
+          nixosConfigurations =
+            generateConfig "rog-strix-g15" system inputs [
+              ./common/networkmanager.nix
+              ./common/guest-user.nix
+              ./common/plymouth.nix
+              ./common/pipewire.nix
+              ./common/hyprland.nix
+              ./common/nvidia.nix
+              ./common/sddm.nix
 
-            nixos-hardware.nixosModules.asus-rog-strix-g513im
-            allowUnfree
+              nixos-hardware.nixosModules.asus-rog-strix-g513im
+              allowUnfree
 
-            (stateVersion "24.05")
-          ];
+              (stateVersion "24.05")
+            ];
         };
       }
     );
