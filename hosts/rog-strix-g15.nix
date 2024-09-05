@@ -32,7 +32,7 @@
     gnome-text-editor
     gnome.nautilus
     alacritty
-    firefox
+    librewolf
 
     fastfetch
     helix
