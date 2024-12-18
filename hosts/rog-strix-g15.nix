@@ -6,7 +6,7 @@
     xserver.videoDrivers = ["amdgpu"];
 
     # Tiny rescue gnome session if hyprland is bricked
-    displayManager.sessionPackages = with pkgs.gnome; [gnome-session.sessions];
+    displayManager.sessionPackages = with pkgs; [gnome-session.sessions];
 
     earlyoom.enable = true;
     upower.enable = true;
@@ -28,9 +28,9 @@
   fonts.packages = [pkgs.meslo-lgs-nf];
 
   environment.systemPackages = with pkgs; [
-    gnome.gnome-disk-utility
+    gnome-disk-utility
     gnome-text-editor
-    gnome.nautilus
+    nautilus
     alacritty
     librewolf
 
