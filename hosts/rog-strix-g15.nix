@@ -16,7 +16,7 @@
   users.users = {
     notyou = {
       isNormalUser = true;
-      extraGroups = ["wheel" "networkmanager" "dialout"];
+      extraGroups = ["wheel" "networkmanager" "input" "dialout"];
     };
   };
 
