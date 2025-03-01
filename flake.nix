@@ -54,6 +54,7 @@
           nixosConfigurations =
             generateConfig "rog-strix-g15" system inputs [
               ./common/networkmanager.nix
+              ./common/logitech-g920.nix
               ./common/guest-user.nix
               ./common/plymouth.nix
               ./common/pipewire.nix
