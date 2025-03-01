@@ -1,6 +1,6 @@
 {...}: {
   # completely disable drivers if commented
-  # services.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = ["nvidia"];
 
   hardware.nvidia = {
     # caused issues previously
