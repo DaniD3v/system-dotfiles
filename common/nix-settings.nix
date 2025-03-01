@@ -17,10 +17,6 @@ _: {
       # this normally has a strong performance penalty but on (nvme) sdds it's fine
       sync-before-registering = true;
 
-      # TODO set in dotfiles as well
-      # maybe make a third flake containing common configurations for de-duplication?
-      use-xdg-base-directories = true;
-
       # Useless warning.
       # My git tree is dirty 90% of the time I'm applying my configuration.
       warn-dirty = false;
