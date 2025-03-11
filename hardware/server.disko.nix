@@ -20,6 +20,7 @@
 
           content = {
             type = "gpt";
+
             partitions = {
               ESP = {
                 size = "512M";
@@ -32,6 +33,11 @@
                   mountpoint = "/boot";
                   mountOptions = ["umask=0077"];
                 };
+              };
+
+              swap = {
+                size = "32G";
+                content.type = "swap";
               };
 
               root = {
