@@ -4,12 +4,18 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs";
+
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
-    flake-utils,
     nixpkgs,
+    flake-utils,
     nixos-hardware,
+    disko,
     ...
   } @ inputs: let
     pathArrayIfExists = path:
@@ -41,6 +47,12 @@
       };
     };
 
+    container = name: container: {
+      config.virtualisation.oci-containers.containers = {
+        name = container;
+      };
+    };
+
     allowUnfree = {
       nixpkgs.config.allowUnfree = true;
       hardware.enableRedistributableFirmware = true;
@@ -66,6 +78,16 @@
               allowUnfree
 
               (stateVersion "24.05")
+            ]
+            // generateConfig "server" system inputs [
+              ./common/ssh.nix
+
+              # (container ./container/vaultwarden.nix)
+
+              disko.nixosModules.disko
+              ./hardware/server.disko.nix
+
+              (stateVersion "24.11")
             ];
         };
       }

@@ -10,12 +10,8 @@ _: {
       keep-going = true;
 
       # this should be the default.
-      # see https://github.com/NixOS/nixpkgs/issues/327210
+      # see https://github.com/NixOS/nix/issues/11101
       preallocate-contents = true;
-
-      # filesystem sync before assuming a path is valid.
-      # this normally has a strong performance penalty but on (nvme) sdds it's fine
-      sync-before-registering = true;
 
       # Useless warning.
       # My git tree is dirty 90% of the time I'm applying my configuration.
